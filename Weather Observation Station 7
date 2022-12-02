@@ -1,0 +1,10 @@
+/*
+Enter your query here.
+*/
+
+-- 모음(A, E, I, O, U)으로 끝나는 도시명 중복 제외 후 전부 출력 
+SELECT DISTINCT(CITY) FROM STATION WHERE CITY LIKE '%A'
+OR CITY LIKE '%E'
+OR CITY LIKE '%I'
+OR CITY LIKE '%O'
+OR CITY LIKE '%U';
