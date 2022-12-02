@@ -1,0 +1,10 @@
+/*
+Enter your query here.
+*/
+
+-- 도시명 맨 뒤에 글자에 모음이 없고 중복되지 않은 도시를 출력
+SELECT DISTINCT(CITY) FROM STATION WHERE CITY NOT LIKE '%A'
+AND CITY NOT LIKE '%E'
+AND CITY NOT LIKE '%I'
+AND CITY NOT LIKE '%O'
+AND CITY NOT LIKE '%U';
