@@ -1,0 +1,5 @@
+
+-- 중복되지 않고 앞뒤로 모음자가 없는 도시명을 출력
+SELECT DISTINCT(CITY) FROM STATION 
+WHERE LEFT(CITY, 1) NOT IN('A', 'E', 'I', 'O', 'U')
+OR RIGHT(CITY, 1) NOT IN('A', 'E', 'I', 'O', 'U');
