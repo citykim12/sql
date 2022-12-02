@@ -1,0 +1,15 @@
+/*
+Query the list of CITY names from STATION that do not start with vowels. Your result cannot contain duplicates.
+
+Input Format
+
+The STATION table is described as follows:
+*/
+
+-- 도시명 첫글자가 모음이 아닌 도시를 중복 제외하고 출력
+SELECT DISTINCT(CITY) FROM STATION WHERE CITY NOT LIKE 'A%'
+AND CITY NOT LIKE 'E%'
+AND CITY NOT LIKE 'I%'
+AND CITY NOT LIKE 'O%'
+AND CITY NOT LIKE 'U%'
+;
